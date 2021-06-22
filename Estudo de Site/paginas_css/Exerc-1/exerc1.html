@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Introdução CSS</title>
+		
+		<style>
+			table{
+				border: 2px solid black;
+				margin-left: 18%;
+				width: 63%;
+				border-collapse: collapse;
+			}
+			th{
+				padding: 15px;
+				background-color: green;
+				color: white;
+				border-bottom: 1px solid indigo;
+			}
+			td{
+				border-bottom: 1px solid black;
+				padding: 10px;
+				margin-left: 20%;
+			}
+			.center{
+				text-align: center;
+			}
+			.right{
+				text-align: right;
+			}
+			.color{
+				background-color: blue;
+			}
+			.actioncolor:hover{
+				background-color: green;
+				color: white;
+			}
+
+
+		</style>
+
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Descrição do Pedido</th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>Ref.</th>
+				<th class="center">Descrição do Produto</th>
+				<th>Qtd</th>
+				<th>Valor Unitário</th>
+				<th>Total</th>
+			</tr>
+			<tr class="color actioncolor">
+				<td class="center">AZ001</td>
+				<td>ARROZ BRANCO</td>
+				<td class="center">5</td>
+				<td class="right">10,00</td>
+				<td class="right">50,00</td>
+			</tr>
+			<tr class="actioncolor">
+				<td class="center">FI002</td>
+				<td>FEIJÃO PRETO</td>
+				<td class="center">10</td>
+				<td class="right">12,00</td>
+				<td class="right">120,00</td>
+			</tr>
+			<tr class="color actioncolor">
+				<td class="center">FA005</td>
+				<td>FARINHA DE MILHO</td>
+				<td class="center">50</td>
+				<td class="right">2,00</td>
+				<td class="right">100,00</td>
+			</tr>
+			<tr class="actioncolor">
+				<td class="center">FJ003</td>
+				<td>FEIJÃO CARIOCA(COMUM)</td>
+				<td class="center">20</td>
+				<td class="right">10,00</td>
+				<td class="right">200,00</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Introdução JavaScript</title>
+		
+		<style>
+
+		</style>
+		<script>
+            /*
+            function primeiro(){
+                var nome = prompt("Informe seu nome: ");
+                document.write("<h5>Nome: " + nome + "</h5>");
+
+            }
+            */
+            function validar(){
+                if (document.Dados.txtName.value == ""){
+                    alert("Por Favor Informe um Nome na caixa!");
+                } else if (document.Dados.optOpcao[0].checked != true && document.Dados.optOpcao[1].checked != true){
+                    alert("Selecione uma das Opções Sim/Não.");
+                } else if (document.Dados.cmbEstado.value == "Selecione") {
+                    alert("Selecione um Estado da Lista.");
+                } else {
+                    document.Dados.submit();
+                }
+            }
+
+		</script>
+	</head>
+	<body>
+        <h1>Introdução Função e Forms</h1>
+        <!--
+        <button onclick="primeiro();">Teste</button>
+        -->
+        <!--
+            Para enviar para outra pagina(as informações) deve-se colocar Action="" dentro do Form, assim
+            quando ele for tentar enviar ele é obrigado a passar pela função para seguir em frente.
+            
+        -->
+        <form name="Dados" method="post">
+            <p>
+                Nome:
+                <input type="text" name="txtName" id="txtName" />
+            </p>
+            <p>
+                Opção:
+                <input type="radio" name="optOpcao" value="SIM" /> Sim
+                <input type="radio" name="optOpcao" value="NAO" /> Não
+            </p>
+            <p>
+                <select name="cmbEstado" id="cmbEstado">
+                    <option>Selecione</option>
+                    <option>SP</option>
+                    <option>MG</option>
+                    <option>RJ</option>
+                </select>
+            </p>
+            <p>
+                Periodo: <br>
+                Manhã: <input type="checkbox" name="cmbManha" value="M"/>
+                Tarde: <input type="checkbox" name="cmbTarde" value="T"/> 
+                Noturno: <input type="checkbox" name="cmbNoturno" value="N"/> 
+            </p>
+            <p>
+
+                <input type="button" name="Enviar" value="Enviar" onclick="validar()" />
+            </p>
+
+        </form>
+	</body>
+</html>

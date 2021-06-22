@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Introdução JavaScript</title>
+		<script src="./jquery-3.5.1.js"></script>
+
+		<style>
+            p{ font-size: 25px;}
+		</style>
+
+		<script>
+            $(document).ready(function(){
+                //Mostrar();
+                $("#A1").click(function(){
+                    $("#P1").html("Hellow World");
+
+
+                });
+                $("#A2").click(function(){
+                    $("#P1").css({ "color" : "red" });
+
+                });
+                $("#Copiar").click(function(){
+                    //colocar o valor de Txt1 em Txt2
+                    $("#Txt2").val($("#Txt1").val());
+
+                });
+            });
+		</script>
+
+
+	</head>
+	<body>
+        <h1>JQUERY</h1>
+        <a id="A1" href="#">Alterar um Paragráfo.</a><br>
+        <a id="A2" href="#">Alterar a cor do paragráfo.</a>
+        <p id="P1" >Essa Linha será Alterar.</p>
+        Caixa 1 <input type="text" id="Txt1"/><br>
+        Caixa 2 <input type="text" id="Txt2"/><br>
+        <button id="Copiar">Copiar</button>
+
+	</body>
+</html>

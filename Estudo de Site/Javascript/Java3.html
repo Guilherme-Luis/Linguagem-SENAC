@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Introdução JavaScript</title>
+		
+		<style>
+			.Entrada, .Saida{
+				width: 80%;
+				margin-left: 10%;
+				border: 1px solid red;
+				padding-top: 15px;
+				padding-bottom: 10px;
+				margin-top: 10px;
+			}
+			.Entrada2{
+				padding-left: 20px;
+			}
+			.Saida{
+				height: 150px;
+			}
+			.Operacao{
+				width: 20%;
+				margin-left: 3.5%;
+				padding-top: 10px;
+				padding-bottom: 15px;
+				text-align: center;
+				border: 1px solid red;
+				color: blue;
+				font-weight: bold;
+				display: inline-block;
+				
+			}
+		</style>
+
+
+		<script>
+			function Calculo(){
+				let V1, V2;
+				V1 = document.getElementById("txtV1");
+				V2 = document.getElementById("txtV2");
+
+				var n1, n2;
+				n1 = parseInt(V1.value);
+				n2 = parseInt(V2.value);
+
+				document.getElementById("Soma").innerHTML =(n1 + n2);
+				document.getElementById("Subtracao").innerHTML =(n1 - n2);
+				document.getElementById("Multiplicacao").innerHTML =(n1 * n2);
+				document.getElementById("Divisao").innerHTML =(n1 / n2);
+			}
+		</script>
+
+
+	</head>
+	<body>
+        <h1>Java Script - Alterar Valor HTML</h1>
+		<div class="Entrada">
+			<div class="Entrada2">
+				<button onclick="Calculo()">Calcular</button>
+				<p>Valor 1<input type="text" id="txtV1"/></p>
+				<p>Valor 2<input type="text" id="txtV2"/></p>
+			</div>
+		</div>
+        <div class="Saida">
+			<div class="Operacao" id="Soma"> 
+				SOMA:
+			</div>
+			<div class="Operacao" id="Subtracao">
+				SUBTRAÇÃO:
+			</div>
+			<div class="Operacao" id="Multiplicacao">
+				MULTIPLICAÇÃO:
+			</div>
+			<div class="Operacao" id="Divisao">
+				DIVISÃO:
+			</div>
+
+		</div>
+	</body>
+</html>

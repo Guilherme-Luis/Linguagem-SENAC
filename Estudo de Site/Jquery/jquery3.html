@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Introdução JavaScript</title>
+		<script src="./jquery-3.5.1.js"></script>
+
+		<style>
+            *{
+                top: 0;
+                margin: 0;
+            }
+            #Caixa{
+                width: 50%;
+                height: 65%;
+                margin-left: 25%;
+                margin-top: 10%;
+                background-color: white;
+                border: 1px solid purple;
+                display: none;
+                position: absolute;
+
+            }
+            #Geral{
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                top: 0;
+                position: absolute;
+                display: none;
+                opacity: 0;
+            }
+            #Fechar{
+                font-weight: bold;
+                padding: 5px;
+                cursor: pointer;
+                float: right;
+                
+            }
+            #Fechar:hover{
+                color: red;
+            }
+            h4{
+                padding: 5px;
+                margin-top: 5px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            #Vvideo{
+                background-color: black;
+                width: 98%;
+                height: 93%;
+                margin-left: 1%;
+                padding: 0;  
+            }
+		</style>
+
+		<script>
+            $(document).ready(function(){
+                $("#MostrarMensagem").click(function(){
+                    alert("Criar um Efeito Caixa suspensa.");
+                });
+                $("#MostrarCaixa").click(function(){
+                    $("#Geral").css( {"display" : "block"} );
+                    $("#Geral").animate( {"opacity" : "0.6"},1000, function(){
+                        $("#Caixa").fadeIn(1000, function(){
+                            Executar(1);
+                        });
+                    });
+                });
+                $("#Fechar").click(function(){
+                    Executar(0);
+                    $("#Caixa").fadeOut(1000);
+                    $("#Geral").animate( {"opacity" : "0"},1000, function(){
+                        $("#Geral").css( {"display" : "none"} );
+                    });
+                });
+            });
+            function Executar(p){
+                var vd = document.getElementById("Vvideo");
+                if (p == 1){
+                    vd.play();
+                } else {
+                    vd.pause();
+                }
+
+            }
+		</script>
+
+
+	</head>
+	<body>
+        <div>
+            <h1>JQUERY - Caixa Suspensa</h1>
+            <hr />
+            <h4 id="MostrarCaixa">Mostrar Caixa Suspensa</h4>
+            <h4 id="MostrarMensagem">Mostrar mensagem de Alerta</h4>
+        </div>
+        <div id="Geral">
+
+        </div>
+        <div id="Caixa">
+            <span id="Fechar">X</span>
+            <div>
+                <video id="Vvideo" controls>
+                    <source src="./Media/DAY_OF_GLASS.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+
+	</body>
+</html>

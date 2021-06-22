@@ -1,0 +1,207 @@
+*{
+    top: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Cabecalho{
+    margin-left: 7%;
+    margin-top: 2%;
+    font-size: 80px;
+    color: white;
+}
+#Selecao{
+    background-color: rgb(240, 43, 17);
+    height: auto;
+    display: inline-flex;
+    width: 100%;
+}
+.Menu{
+    text-align: center;
+    width: 8%;
+    cursor: pointer;
+    height: 50px;
+    font: bolder;
+}
+.Menu:hover{
+    background-color: rgb(187, 32, 12);
+}
+.Text{
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+}
+#Inicio{
+    margin-left: 4%;
+}
+#Conta{
+    width: 15%;
+}
+#Corpo{
+    background-color: white;
+    margin-top: 38px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: auto;
+}
+#SemiCorpo{
+    background-color: rgb(241, 240, 240);
+    margin-left: 45px;
+    margin-right: 45px;
+    height: 680px;
+}
+#PosCorpo{
+    width: 100%;
+    height: 55px;
+    border-bottom: 2px solid rgb(214, 206, 206);
+}
+#Text2{
+    color: rgb(53, 50, 50);
+    font: bolder;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+#Text3{
+    color: rgb(155, 151, 151);
+    margin-top: 1%;
+    margin-left: 3%;
+    font-size: 14px;
+}
+#Coment{
+    margin-top: 2%;
+    margin-left: 3%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+#DivOp{
+    display: inline-flex;
+    margin-left: 80%;
+    color: rgb(90, 87, 87);
+    font-size: 16px;
+}
+#Opcao{
+    margin-left: 5px;
+    height: 25px;
+    border: 1px solid rgb(214, 206, 206);
+    background-color: rgb(214, 206, 206);
+    cursor: pointer;
+}
+hr{
+    margin-left: 3%;
+    margin-right: 3%;
+    opacity: 0.3;
+    margin-top: 1%;
+}
+#Interacao{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+textarea{
+    min-height: 50px;
+    width: 90%;
+    text-align: left;
+    margin-top: 10px;
+}
+#Carregar{
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 92.7%;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(52, 52, 207);
+    border: 1px solid rgb(52, 52, 207);
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+#Carregar:hover{
+    background-color: rgb(214, 206, 206);
+    border: 1px solid rgb(214, 206, 206);
+}
+#Facebook{
+    margin-left: 3%;
+    margin-top: 1%;
+    height: 50px;
+    font-size: 13px;
+}
+#PosPagina{
+    background-color: red;
+    border: 1px solid red;
+}
+#FinalP{
+    color: #7b7b7b;
+    background-color: #161616;
+    width: 100%;
+    height: 80px;
+}
+#FinalR{
+    color: #7b7b7b;
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #0f0f0f;
+}
+#TextF{
+    text-align: center;
+    margin-top: 1.5%; 
+}
+#Inter{
+    display: inline-flex;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.Menu2{
+    text-align: center;
+    background-color: rgb(241, 240, 240);
+    color: rgb(247, 203, 82);
+    border: 2px solid rgb(247, 203, 82);
+    margin-left: 3%;
+    margin-bottom: 6%;
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.Menu2:hover{
+    background-color: rgb(247, 203, 82);
+    color: white;
+}
+#Tente{
+    width: 220px;
+}
+.Op{
+    margin-top: 10px;
+}
+#Corrige{
+    background-color: rgb(230, 65, 65);
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 40px;
+    color: white;
+    border: 1px solid rgb(230, 65, 65);
+}
+.Corrigir{
+    margin-left: 3%;
+    margin-top: 10px;
+}
+#Enviar{
+    margin-left: 30px;
+    background-color: rgb(230, 65, 65);
+    cursor: pointer;
+    border: 1px solid rgb(230, 65, 65);
+    margin-top: 360px;
+    height: 40px;
+    width: 120px;
+    color: white;
+}
+#Enviar:hover{
+    background-color: #333030;
+    border: 1px solid #333030;
+}
+#Pagina{
+    margin-top: 5%;
+    margin-left: 30px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Introdução CSS</title>
+		
+		<style>
+			input[type="text"], select{
+				background-color: black;
+				color: red;
+				font-size: 20px;
+				font-family: Arial, Helvetica, Sans-Serif;
+				padding: 5px;
+				border: 1px solid blue;
+				border-bottom: 2px solid green;
+				width: 250px;
+			}
+			select{
+				width: 260px;
+			}
+			input[type="text"]:hover{
+				background-color: white;
+				border-color: black;
+				border-bottom: 1px solid black;
+			}
+			input[type="text"]:focus{
+				border-color: indigo;
+				background-color: #F5F5F5;
+			}
+			input[type="submit"]{
+				margin-top: 10px;
+				width: 260px;
+				padding: 10px;
+				background-color: black;
+				color: indigo;
+				font-size: 20px;
+				font-weight: bold;
+				border: 2px solid darkgray;
+				border-radius: 10px;
+			}
+			input[type="submit"]:hover{
+				background-color: white;
+				color: red;
+				cursor: pointer;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<h1>Formatar Formulários</h1>
+
+		<form>
+			<h5>Nome</h5>
+			<input type="text" name="txtNome">
+			<h5>Cidade</h5>
+			<input type="text" name="txtCidade">
+			<h5>Telefone</h5>
+			<input type="text" name="txtTelefone">
+			<h5>Estado</h5>
+			<select name="cmbEstado">
+				<option>Minas Gerais</option>
+				<option>São Paulo</option>
+				<option>Rio de Janeiro</option>
+			</select>
+			<br>
+			<input type="submit" name="salvar" value="Salvar" />
+
+		</form>
+
+	</body>
+</html>
